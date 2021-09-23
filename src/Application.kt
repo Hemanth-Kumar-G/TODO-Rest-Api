@@ -14,6 +14,7 @@ import io.ktor.features.*
 import io.ktor.gson.*
 import io.ktor.locations.*
 import io.ktor.request.*
+import io.ktor.response.*
 import io.ktor.routing.*
 import io.ktor.sessions.*
 import org.slf4j.event.Level
@@ -70,6 +71,10 @@ fun Application.module(testing: Boolean = false) {
 
 
     routing {
+
+        get("/"){
+            call.respondText { "Hello Hemanth" }
+        }
         userRoute(
             userDb,
             todoDb,
