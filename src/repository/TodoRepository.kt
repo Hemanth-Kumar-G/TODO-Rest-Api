@@ -16,6 +16,7 @@ class TodoRepository : TodoDoa {
             var statement: InsertStatement<Number>? = null
             statement = TodoTable.insert { todo ->
                 todo[TodoTable.todo] = todoData
+                todo[TodoTable.userId] = userId
                 todo[TodoTable.done] = done
             }
             rowToTodo(statement.resultedValues?.get(0))
