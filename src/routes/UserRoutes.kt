@@ -152,7 +152,7 @@ fun Route.userRoute(
                 user.userId,
                 name,
                 email,
-                password
+                hashPassword
             )
             if (currentUser == 1) {
                 call.respondText("Updated Successfully")
