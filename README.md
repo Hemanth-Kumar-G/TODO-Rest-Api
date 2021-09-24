@@ -20,7 +20,7 @@
     * ============TODO====================
     * ====================================
     */
-    JWT is must for authentication
+    JWT token is must for authentication
     
      POST "/v1/todos"   PARAM= todo,done:Boolean
      GET "/v1/todos" 
