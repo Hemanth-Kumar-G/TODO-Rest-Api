@@ -9,11 +9,11 @@
     * ====================================
     */
    
-   POST "/v1/create"   PARAM= name,email,password
-   POST "/v1/login"   PARAM= email,password
-   POST "/v1/user"     need to send JWT token which you would be getting during create /login
-   PUT "/v1/user"   PARAM= name,email,password    need to send JWT token which you would be getting during create /login
-   PATCH "/v1/user"   ANY PARAM= name,email,password    need to send JWT token which you would be getting during create /login
+   POST "/v1/create"   PARAM= name,email,password   
+   POST "/v1/login"   PARAM= email,password   
+   POST "/v1/user"     need to send JWT token which you would be getting during create /login   
+   PUT "/v1/user"   PARAM= name,email,password    need to send JWT token which you would be getting during create /login    
+   PATCH "/v1/user"   ANY PARAM= name,email,password    need to send JWT token which you would be getting during create /login    
   
     /**
     * =====================================
